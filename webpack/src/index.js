@@ -1,5 +1,5 @@
 import './styles/main.scss'
-import sms from './tools/saludar.js'
+import sms from '../../near-asteroids/src/tools/saludar.js'
 
 document.querySelector('#app').innerHTML = sms('Bruno')
 
