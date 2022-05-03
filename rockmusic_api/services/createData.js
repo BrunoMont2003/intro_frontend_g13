@@ -12,7 +12,6 @@ const createData = async () => {
     for (let index = 0; index < limit.length; index++) {
       arrayArtits.push(await getArtist(limit[index]))
     }
-    console.log(arrayArtits)
     return arrayArtits
   } catch (error) {
     console.log(error.message)
