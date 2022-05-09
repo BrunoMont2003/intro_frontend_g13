@@ -31,7 +31,7 @@ const projects = [
 export default class Portfolio extends Component {
   render() {
     return (
-      <Layout section="portfolio">
+      <Layout section="portfolio" className="flex-column">
         <h2 className="my-5">Portfolio</h2>
         <CardGroup projects={projects} />
       </Layout>
