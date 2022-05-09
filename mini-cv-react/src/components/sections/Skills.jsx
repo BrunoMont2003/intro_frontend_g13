@@ -44,7 +44,7 @@ const skills = [
     color: "#5ADAFD",
   },
   {
-    name: "TailwindCss",
+    name: "Bootstrap",
     icon: faBootstrap,
     backgroundColor: "#7952B3",
   },
