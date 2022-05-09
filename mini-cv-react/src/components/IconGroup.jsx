@@ -12,6 +12,7 @@ export default class IconGroup extends Component {
             image={element.image}
             backgroundColor={element.backgroundColor}
             color={element.color}
+            name={element.name}
           />
         ))}
       </div>
