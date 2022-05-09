@@ -7,22 +7,23 @@ const projects = [
   {
     title: "Pokedex",
     image: pokedex,
+    link: "https://pokedex-bruno.netlify.app/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptates sint itaque incidunt, dolor cupiditate, est, quisquam voluptas perspiciatis iure eaque eveniet accusantium consequuntur assumenda! Commodi rem corporis fugit natus.",
+      "Pokedex is a simple repository of pokemons where you can find the main atributes and abilities of each pokemon. It was made with Vanilla JS, stylized with Taiwind Css and it is consuming the POKEAPI.",
   },
   {
     title: "Near Earth Asteroids",
     image: asteroids,
     link: "https://near-earth-asteroids-bruno.netlify.app/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptates sint itaque incidunt, dolor cupiditate, est, quisquam voluptas perspiciatis iure eaque eveniet accusantium consequuntur assumenda! Commodi rem corporis fugit natus.",
+      "This website presents a list of all the near earth asteroids between certain dates that the user can select. This project was  made with Vanilla JS, stylized with Taiwind Css and it is consuming the NASA API.  ",
   },
   {
     title: "Calendar Utilty",
     image: calendar,
     link: "https://calendar-utility.vercel.app/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptates sint itaque incidunt, dolor cupiditate, est, quisquam voluptas perspiciatis iure eaque eveniet accusantium consequuntur assumenda! Commodi rem corporis fugit natus.",
+      "This web app presents a tool to display information (like events and time) of a personal calendar. The user can drop his .ics file and calcule. This app was made with React Js and stylized with Taiwind Css. ",
   },
 ];
 
