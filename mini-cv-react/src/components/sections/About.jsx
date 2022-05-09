@@ -1,21 +1,19 @@
 import React, { Component } from "react";
 import me from "../../assets/me.png";
+import Layout from "../Layout";
 export default class About extends Component {
   render() {
     return (
-      <div
-        id="about"
-        className="min-vh-100 d-flex justify-content-center align-items-center  container p-5 border-bottom border-dark"
-      >
+      <Layout section="about">
         <div className="row h-100">
-          <div className="col-md-4 d-flex justify-content-center align-items-center my-5 my-md-0">
+          <figure className="col-md-4 d-flex justify-content-center align-items-center my-5 my-md-0">
             <img
               className="img-fluid rounded-circle shadow"
               src={me}
               alt="brunomont"
             />
-          </div>
-          <div className=" col-md-8 d-flex flex-column justify-content-center align-items-center">
+          </figure>
+          <article className=" col-md-8 d-flex flex-column justify-content-center align-items-center">
             <h1 className="display-5 fw-bold">Hi I'm Bruno Mont</h1>
             <h2 className="fw-normal">Web Developer</h2>
             <div className="col-lg-6">
@@ -39,9 +37,9 @@ export default class About extends Component {
                 </button>
               </div>
             </div>
-          </div>
+          </article>
         </div>
-      </div>
+      </Layout>
     );
   }
 }

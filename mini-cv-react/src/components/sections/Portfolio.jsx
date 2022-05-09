@@ -3,6 +3,7 @@ import CardGroup from "../CardGroup";
 import pokedex from "../../assets/pokedex.png";
 import asteroids from "../../assets/asteroids.png";
 import calendar from "../../assets/calendar.png";
+import Layout from "../Layout";
 const projects = [
   {
     title: "Pokedex",
@@ -30,13 +31,10 @@ const projects = [
 export default class Portfolio extends Component {
   render() {
     return (
-      <div
-        id="portfolio"
-        className="min-vh-100 d-flex flex-column justify-content-center align-items-center  container p-5 border-bottom border-dark"
-      >
+      <Layout section="portfolio">
         <h2 className="my-5">Portfolio</h2>
         <CardGroup projects={projects} />
-      </div>
+      </Layout>
     );
   }
 }
