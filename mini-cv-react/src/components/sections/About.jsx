@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import me from "../../assets/me.png";
 export default class About extends Component {
   render() {
     return (
@@ -8,11 +8,11 @@ export default class About extends Component {
         className="min-vh-100 d-flex justify-content-center align-items-center  container p-5 border-bottom border-dark"
       >
         <div className="row h-100">
-          <div className="col-md-4 d-flex justify-content-center align-items-center shadow my-5 my-md-0">
+          <div className="col-md-4 d-flex justify-content-center align-items-center my-5 my-md-0">
             <img
-              className="img-fluid w-100"
-              src="https://gateway.pinata.cloud/ipfs/QmTsk5iEre6qswqeWjLHk7PWQmT5uAxigSi8RzLadJgfAS"
-              alt=""
+              className="img-fluid rounded-circle shadow"
+              src={me}
+              alt="brunomont"
             />
           </div>
           <div className=" col-md-8 d-flex flex-column justify-content-center align-items-center">
