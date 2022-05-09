@@ -5,3 +5,15 @@
   box-sizing: border-box;
   font-family: "Ubuntu Mono", monospace !important;
 }
+.myIcon {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myIcon svg,
+.myIcon img {
+  height: 5rem;
+}
