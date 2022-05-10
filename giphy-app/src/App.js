@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { Component } from "react";
+import GifGroup from "./Components/GifGroup";
 import SearchBar from "./Components/SearchBar";
 
 export default class App extends Component {
@@ -33,26 +34,7 @@ export default class App extends Component {
           handleSearch={(e) => this.handleSearch(e)}
           search={this.state.search}
         />
-        <section className="w-100 py-5 my-5 d-flex gap-5 flex-wrap justify-content-center align-items-center">
-          {this.state.results.map(
-            (
-              {
-                images: {
-                  downsized: { url },
-                },
-                title,
-              },
-              index
-            ) => (
-              <figure
-                style={{ minWidth: "150px", maxWidth: "250px" }}
-                key={index}
-              >
-                <img src={url} alt={title} className="img-fluid" />
-              </figure>
-            )
-          )}
-        </section>
+        <GifGroup results={this.state.results} />
       </div>
     );
   }
