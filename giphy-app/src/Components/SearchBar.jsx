@@ -8,7 +8,7 @@ export default class SearchBar extends Component {
         onSubmit={async (e) => {
           await this.props.handleSearch(e);
         }}
-        className="d-flex gap-3"
+        className="d-flex gap-3 w-100 justify-content-center align-items-center"
       >
         <input
           type="text"
