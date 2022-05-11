@@ -29,6 +29,7 @@
   "prettier": {
     "trailingComma": "none",
     "singleQuote": true,
-    "semi": false
+    "semi": false,
+    "jsxSingleQuote": true
   }
 }
