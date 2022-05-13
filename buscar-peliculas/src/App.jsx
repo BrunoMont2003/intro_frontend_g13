@@ -1,19 +1,18 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Movies } from './Movies'
 import { getMovies } from './services/getMovies'
 export const App = () => {
-  const [search, setSearch] = useState('')
+  const search = useRef()
   const [movies, setMovies] = useState([])
-  const handleChange = ({ target: { value } }) => {
-    setSearch(value)
-  }
+
   const onGetMovies = async (title) => {
     const result = title ? await getMovies(title) : await getMovies()
     return result
   }
   const handleSearch = async (e) => {
     e.preventDefault()
-    const result = await onGetMovies(search)
+    const { value } = search.current
+    const result = await onGetMovies(value)
     setMovies(result)
   }
 
@@ -33,8 +32,7 @@ export const App = () => {
               type='text'
               className='form-control h-100'
               placeholder='Escribir película'
-              value={search}
-              onChange={handleChange}
+              ref={search}
             />
           </div>
           <div className='col-md-2 '>
