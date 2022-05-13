@@ -31,14 +31,14 @@ export const App = () => {
           <div className='my-3 col-md-10'>
             <input
               type='text'
-              className='form-control'
+              className='form-control h-100'
               placeholder='Escribir película'
               value={search}
               onChange={handleChange}
             />
           </div>
-          <div className='col-md-2'>
-            <button className='btn btn-outline-light'> Buscar </button>
+          <div className='col-md-2 '>
+            <button className='btn btn-outline-light w-100'> Buscar </button>
           </div>
         </form>
       </div>
