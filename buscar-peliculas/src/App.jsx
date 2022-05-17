@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { Movies } from './Movies'
+import { Movies } from './Components/Movies'
 import { getMovies } from './services/getMovies'
 export const App = () => {
   const search = useRef()
